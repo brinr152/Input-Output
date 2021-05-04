@@ -2,17 +2,47 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://use.typekit.net/qcs5myi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qcs5myi.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Emoji Painting App</title>
+    <title>Painting Canvas</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="text">
-      <b>Drag</b> to paint
-      <br>
-      Press <b>Backspace</b> to clear the canvas
+
+    <div id="tools">
+      <div class="text">
+        <b>Move</b> to paint.
+        Press <b>Backspace</b> to clear the canvas.
+      </div>
+
+      <div id="choices">
+        <input type="image" class="choices" id="paint1"  src="colors/paint1.png" alt="Light Green Circle">
+        <input type="image" class="choices" id="paint2" src="colors/paint2.png" alt="Light Pink Circle">
+        <input type="image" class="choices" id="paint3" src="colors/paint3.png" alt="Brick Red Circle">
+        <input type="image" class="choices" id="paint4" src="colors/paint4.png" alt="Dark Violet Circle">
+        <input type="image" class="choices" id="paint5" src="colors/paint5.png" alt="Mixed Bright Green and Orange Circle">
+        <input type="image" class="choices" id="paint6" src="colors/paint6.png" alt="Bright Orange Circle">
+        <input type="image" class="choices" id="paint7" src="colors/paint7.png" alt="Mixed Blue and Yellow Circle">
+        <input type="image" class="choices" id="paint8" src="colors/paint8.png" alt="Mixed Bright Orange and Red Circle">
+
+        <input type="image" class="choices" id="paint9" src="icons/paint9icon.png" alt="Dark Blue Circle">
+        <input type="image" class="choices" id="paint10" src="icons/paint10icon.png" alt="Mixed Pink Circle">
+        <input type="image" class="choices" id="paint11" src="icons/paint11icon.png" alt="Bright Red Circle">
+        <input type="image" class="choices" id="paint12" src="icons/paint12icon.png" alt="Deep Green Circle">
+
+        <input type="image" class="choices" id="paint15" src="icons/paint15icon.png" alt="Light Yellow Circle">
+
+        <div class="text" id="erase">
+          Eraser 
+          <br>Tool
+        </div>
+
+      </div>
+   
     </div>
+
+
     <div id="canvas">
     </div>
     <script src="script.js"></script>
