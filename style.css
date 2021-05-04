@@ -19,6 +19,8 @@ body {
 .choices {
   float: left;
   width: 5%;
+  position: relative;
+  padding-top: 1%;
 }
 
 /*setting up canvas*/
@@ -41,9 +43,66 @@ padding-left: 1%;
 #erase{
   font-size: 15pt;
   line-height: 100%;
+  font-family: aesthet-nova, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15pt;
+  padding-left: 1%;
+  padding-top: 1.25%;
+  text-align: center;
 }
 
 /*styling 'paintbrush' cursor*/
 .cursor{
   opacity: 50%;
 }
+
+/*styling 'paintbrush' cursor*/
+.cursor{
+  opacity: 50%;
+}
+
+/*custom scrollbars*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: url('cursor_back.png');
+}
+
+::-webkit-scrollbar-thumb {
+  background: url('cursor.png'); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: green; 
+}
+
+/*setting up for smaller screens*/
+@media only screen and (max-width: 500px) {
+.text {
+font-family: aesthet-nova, serif;
+font-weight: 400;
+font-style: normal;
+font-size: 10pt;
+padding-left: 1%;
+}
+#erase{
+  font-size: 5pt;
+  line-height: 100%;
+  font-family: aesthet-nova, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15pt;
+  padding-left: 1%;
+  padding-top: 1.25%;
+  text-align: center;
+}
+
+
+
+
+

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/qcs5myi.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Painting Canvas</title>
+    <title>A New Kind of Painting</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -14,6 +14,7 @@
       <div class="text">
         <b>Move</b> to paint.
         Press <b>Backspace</b> to clear the canvas.
+        <button id="download"><b>Click here<b> to download</button>
       </div>
 
       <div id="choices">
@@ -31,20 +32,21 @@
         <input type="image" class="choices" id="paint11" src="icons/paint11icon.png" alt="Bright Red Circle">
         <input type="image" class="choices" id="paint12" src="icons/paint12icon.png" alt="Deep Green Circle">
 
+
+        <input type="image" class="choices" id="paint14" src="icons/paint14icon.png" alt="Light Orange Circle">
         <input type="image" class="choices" id="paint15" src="icons/paint15icon.png" alt="Light Yellow Circle">
 
-        <div class="text" id="erase">
-          Eraser 
-          <br>Tool
+        <div class="choices" id="erase">
+          Eraser Tool
         </div>
 
       </div>
    
     </div>
-
-
+    
     <div id="canvas">
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

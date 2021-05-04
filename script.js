@@ -79,6 +79,12 @@ paint12.addEventListener("click", function(){
   currentColor = 'colors/paint12.png';
 })
 
+let paint14 = document.querySelector("#paint14");
+
+paint14.addEventListener("click", function(){
+  currentColor = 'colors/paint14.png';
+})
+
 let paint15 = document.querySelector("#paint15");
 
 paint15.addEventListener("click", function(){
@@ -117,3 +123,16 @@ document.addEventListener("keydown", function(event){
     canvas.innerHTML = "";
   }
 })
+
+
+/*downloading the canvas as an image - sources from http://jsfiddle.net/skura23/osk404kx/2/  */
+var node = document.getElementById('canvas');
+var btn = document.getElementById('download');
+
+btn.onclick = function() {
+canvas.innerHTML = "";
+  domtoimage.toBlob(document.getElementById('canvas'))
+    .then(function(blob) {
+      window.saveAs(blob, 'my_paintting.png');
+    });
+}
