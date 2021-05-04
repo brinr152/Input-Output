@@ -37,7 +37,7 @@ body {
 font-family: aesthet-nova, serif;
 font-weight: 400;
 font-style: normal;
-font-size: 25pt;
+font-size: 20pt;
 padding-left: 1%;
 }
 #erase{
@@ -50,6 +50,16 @@ padding-left: 1%;
   padding-left: 1%;
   padding-top: 1.25%;
   text-align: center;
+}
+
+/*styling download button*/
+#download {
+  font-family: aesthet-nova, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20pt;
+  border: none;
+  background-color: transparent;
 }
 
 /*styling 'paintbrush' cursor*/
@@ -84,22 +94,14 @@ padding-left: 1%;
 /*setting up for smaller screens*/
 @media only screen and (max-width: 500px) {
 .text {
-font-family: aesthet-nova, serif;
-font-weight: 400;
-font-style: normal;
 font-size: 10pt;
-padding-left: 1%;
 }
 #erase{
   font-size: 5pt;
-  line-height: 100%;
-  font-family: aesthet-nova, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15pt;
-  padding-left: 1%;
-  padding-top: 1.25%;
-  text-align: center;
+  padding-top: 2%;
+}
+#download {
+  font-size: 10pt;
 }
 
 
