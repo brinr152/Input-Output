@@ -124,15 +124,19 @@ document.addEventListener("keydown", function(event){
   }
 })
 
+/*changing my div to a canvas - sourced from http://html2canvas.hertzen.com*/
+html2canvas(document.querySelector("#canvas")).then(canvas => {
+    document.body.appendChild(canvas)
+});
 
-/*downloading the canvas as an image - sources from http://jsfiddle.net/skura23/osk404kx/2/  */
-var node = document.getElementById('canvas');
-var btn = document.getElementById('download');
+/*downloading the canvas as an image - sourced from https://dev.to/dailydevtips1/vanilla-javascript-save-canvas-as-an-image-3pfa*/
+const download = document.getElementById('download');
 
-btn.onclick = function() {
-canvas.innerHTML = "";
-  domtoimage.toBlob(document.getElementById('canvas'))
-    .then(function(blob) {
-      window.saveAs(blob, 'my_paintting.png');
-    });
-}
+download.addEventListener('click', function(e) {
+  var link = document.createElement('a');
+  link.download = 'download.png';
+  link.href = canvas.toDataURL()
+  link.click();
+  link.delete;
+});
+

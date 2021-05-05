@@ -67,11 +67,6 @@ padding-left: 1%;
   opacity: 50%;
 }
 
-/*styling 'paintbrush' cursor*/
-.cursor{
-  opacity: 50%;
-}
-
 /*custom scrollbars*/
 ::-webkit-scrollbar {
   width: 10px;
