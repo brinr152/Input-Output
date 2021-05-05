@@ -29,7 +29,9 @@ body {
   left:0px;
   width:1000vw;
   height:1000vh;
-  background-color: #FFFEF2;
+  background-image: url("paint_back.png");
+  background-position: center;
+  background-size: cover;
 }
 
 /*text styling*/
